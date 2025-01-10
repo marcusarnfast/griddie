@@ -1,0 +1,81 @@
+import { applyIntroduction } from "./introduction";
+import { applyNakedCandidates } from "./naked-candidates";
+import { applyHiddenCandidates } from "./hidden-candidates";
+import { applyIntersectionRemoval } from "./intersection-removal";
+import { applyXWing } from "./x-wing";
+import { applySimpleColouring } from "./simple-colouring";
+import { applyYWing } from "./y-wing";
+import { applyRectangleElimination } from "./rectangle-elimination";
+import { applySwordfish } from "./swordfish";
+import { applyXYZWing } from "./xyz-wing";
+import { applyBUG } from "./bug";
+import { applyAvoidableRectangles } from "./avoidable-rectangles";
+import { applyXCyclesPart1 } from "./x-cycles-part1";
+import { applyXCyclesPart2 } from "./x-cycles-part2";
+import { apply3DMedusa } from "./3d-medusa";
+import { applyJellyfish } from "./jellyfish";
+import { applyUniqueRectangles } from "./unique-rectangles";
+import { applyFireworks } from "./fireworks";
+import { applySKLoops } from "./sk-loops";
+import { applyExtendedRectangles } from "./extended-rectangles";
+import { applyHiddenURs } from "./hidden-urs";
+import { applyWXYZWing } from "./wxyz-wing";
+import { applyXYChains } from "./xy-chains";
+import { applyAlignedPairExclusion } from "./aligned-pair-exclusion";
+import { applyExocet } from "./exocet";
+import { applyGroupedXCycles } from "./grouped-x-cycles";
+import { applyFinnedXWing } from "./finned-x-wing";
+import { applyFinnedSwordfish } from "./finned-swordfish";
+import { applyInferenceChains } from "./inference-chains";
+import { applyAICWithGroups } from "./aic-with-groups";
+import { applyAICWithALS } from "./aic-with-als";
+import { applySueDeCoq } from "./sue-de-coq";
+import { applyDigitForcingChains } from "./digit-forcing-chains";
+import { applyNishioForcingChains } from "./nishio-forcing-chains";
+import { applyCellForcingChains } from "./cell-forcing-chains";
+import { applyUnitForcingChains } from "./unit-forcing-chains";
+import { applyAlmostLockedSets } from "./almost-locked-sets";
+import { applyDeathBlossom } from "./death-blossom";
+import { applyPatternOverlay } from "./pattern-overlay";
+
+export const strategies = [
+	{ apply: applyIntroduction, level: 1.0 },
+	{ apply: applyNakedCandidates, level: 2.0 },
+	{ apply: applyHiddenCandidates, level: 2.5 },
+	{ apply: applyIntersectionRemoval, level: 3.0 },
+	{ apply: applyXWing, level: 3.2 },
+	{ apply: applySimpleColouring, level: 3.5 },
+	{ apply: applyYWing, level: 3.8 },
+	{ apply: applyRectangleElimination, level: 4.0 },
+	{ apply: applySwordfish, level: 4.2 },
+	{ apply: applyXYZWing, level: 4.4 },
+	{ apply: applyBUG, level: 4.6 },
+	{ apply: applyAvoidableRectangles, level: 5.0 },
+	{ apply: applyXCyclesPart1, level: 5.2 },
+	{ apply: applyXCyclesPart2, level: 5.4 },
+	{ apply: apply3DMedusa, level: 5.6 },
+	{ apply: applyJellyfish, level: 5.8 },
+	{ apply: applyUniqueRectangles, level: 6.0 },
+	{ apply: applyFireworks, level: 6.2 },
+	{ apply: applySKLoops, level: 6.4 },
+	{ apply: applyExtendedRectangles, level: 6.6 },
+	{ apply: applyHiddenURs, level: 6.8 },
+	{ apply: applyWXYZWing, level: 7.0 },
+	{ apply: applyXYChains, level: 7.2 },
+	{ apply: applyAlignedPairExclusion, level: 7.5 },
+	{ apply: applyExocet, level: 7.8 },
+	{ apply: applyGroupedXCycles, level: 8.0 },
+	{ apply: applyFinnedXWing, level: 8.2 },
+	{ apply: applyFinnedSwordfish, level: 8.5 },
+	{ apply: applyInferenceChains, level: 8.8 },
+	{ apply: applyAICWithGroups, level: 9.0 },
+	{ apply: applyAICWithALS, level: 9.3 },
+	{ apply: applySueDeCoq, level: 9.5 },
+	{ apply: applyDigitForcingChains, level: 9.7 },
+	{ apply: applyNishioForcingChains, level: 9.8 },
+	{ apply: applyCellForcingChains, level: 9.9 },
+	{ apply: applyUnitForcingChains, level: 10.0 },
+	{ apply: applyAlmostLockedSets, level: 10.2 },
+	{ apply: applyDeathBlossom, level: 10.5 },
+	{ apply: applyPatternOverlay, level: 10.8 },
+];
